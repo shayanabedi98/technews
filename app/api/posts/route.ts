@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   const { title, content, links, selectedCategory, imageUrl, publicId } =
     await req.json();
-  const authorEmail = "testing@email.com";
+  const authorEmail = "abedishayan@gmail.com";
 
   if (!title || !content) {
     return NextResponse.json(

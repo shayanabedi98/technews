@@ -80,5 +80,5 @@ model Post {
 model Category {
   id      String   @id @default(auto()) @map("_id") @db.ObjectId
   catName String   @unique
-  post    Post[]
+  posts    Post[]
 }
